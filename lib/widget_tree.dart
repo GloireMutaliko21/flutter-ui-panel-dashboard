@@ -44,7 +44,8 @@ class _WidgetTreeState extends State<WidgetTree> {
             Expanded(child: PanelLeftPage()),
             Expanded(
               child: PanelCenterPage(),
-            )
+            ),
+            Expanded(child: PanelRightPage()),
           ],
         ),
         largeTablet: Row(

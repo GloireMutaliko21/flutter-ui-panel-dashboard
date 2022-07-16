@@ -49,18 +49,8 @@ class _PanelRightPageState extends State<PanelRightPage> {
                   child: ListTile(
                     //leading: Icon(Icons.monetization_on),
                     title: Text(
-                      "Net Revenue",
+                      "Inscription, Participation, Réussite",
                       style: TextStyle(color: Colors.white),
-                    ),
-                    subtitle: Text(
-                      "7% of Sales Avg.",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    trailing: Chip(
-                      label: Text(
-                        r"$46,450",
-                        style: TextStyle(color: Colors.white),
-                      ),
                     ),
                   ),
                 ),

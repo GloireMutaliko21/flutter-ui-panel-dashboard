@@ -585,18 +585,7 @@ class LineChartSample1State extends State<LineChartSample1> {
                     height: 37,
                   ),
                   const Text(
-                    'Unfold Shop 2021',
-                    style: TextStyle(
-                      color: Color(0xff827daa),
-                      fontSize: 16,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(
-                    height: 4,
-                  ),
-                  const Text(
-                    'Monthly Sales',
+                    'Formation en 2022',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
@@ -685,13 +674,13 @@ class LineChartSample1State extends State<LineChartSample1> {
           getTitles: (value) {
             switch (value.toInt()) {
               case 1:
-                return '1m';
+                return '10';
               case 2:
-                return '2m';
+                return '22';
               case 3:
-                return '3m';
+                return '30';
               case 4:
-                return '5m';
+                return '40';
             }
             return '';
           },
@@ -1021,11 +1010,11 @@ class BarChartSample2State extends State<BarChartSample2> {
                   children: <Widget>[
                     //makeTransactionsIcon(),
                     const Text(
-                      'Monthly Profits',
+                      'Participations',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     const Text(
-                      r'$345,462',
+                      r'126',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
@@ -1039,20 +1028,16 @@ class BarChartSample2State extends State<BarChartSample2> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
-                    const Text(
-                      'Of ',
-                      style: TextStyle(color: Color(0xff77839a), fontSize: 16),
-                    ),
                     Text(
-                      'Sales ',
+                      'Participants ',
                       style: TextStyle(color: leftBarColor, fontSize: 16),
                     ),
                     const Text(
-                      'And ',
+                      'et ',
                       style: TextStyle(color: Color(0xff77839a), fontSize: 16),
                     ),
                     Text(
-                      'Orders',
+                      'Inscrits',
                       style: TextStyle(color: rightBarColor, fontSize: 16),
                     ),
                   ],
@@ -1128,19 +1113,19 @@ class BarChartSample2State extends State<BarChartSample2> {
                             getTitles: (double value) {
                               switch (value.toInt()) {
                                 case 0:
-                                  return 'Mn';
+                                  return 'Janv';
                                 case 1:
-                                  return 'Te';
+                                  return 'Fev';
                                 case 2:
-                                  return 'Wd';
+                                  return 'Mar';
                                 case 3:
-                                  return 'Tu';
+                                  return 'Avr';
                                 case 4:
-                                  return 'Fr';
+                                  return 'Mai';
                                 case 5:
-                                  return 'St';
+                                  return 'Jui';
                                 case 6:
-                                  return 'Sn';
+                                  return 'Juil';
                                 default:
                                   return '';
                               }
@@ -1156,11 +1141,11 @@ class BarChartSample2State extends State<BarChartSample2> {
                             reservedSize: 14,
                             getTitles: (value) {
                               if (value == 0) {
-                                return '1K';
+                                return '0';
                               } else if (value == 10) {
-                                return '5K';
+                                return '50';
                               } else if (value == 19) {
-                                return '10K';
+                                return '100';
                               } else {
                                 return '';
                               }

@@ -44,16 +44,16 @@ class PanelCenterPage extends StatelessWidget {
                 child: ListTile(
                   //leading: Icon(Icons.sell),
                   title: Text(
-                    "Products Available",
+                    "Participation aux cours",
                     style: TextStyle(color: Colors.white),
                   ),
                   subtitle: Text(
-                    "82% of Products Avail.",
+                    "97% d'inscrits",
                     style: TextStyle(color: Colors.white),
                   ),
                   trailing: Chip(
                     label: Text(
-                      "20,500",
+                      "126",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
