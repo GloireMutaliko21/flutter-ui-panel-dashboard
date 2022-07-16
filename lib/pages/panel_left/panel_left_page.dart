@@ -62,16 +62,16 @@ class _PanelLeftPageState extends State<PanelLeftPage> {
                       child: ListTile(
                         //leading: Icon(Icons.shopping_basket),
                         title: Text(
-                          "Products Sold",
+                          "Progression des cours",
                           style: TextStyle(color: Colors.white),
                         ),
                         subtitle: Text(
-                          "18% of Products Sold",
+                          "78% de cours prévus",
                           style: TextStyle(color: Colors.white),
                         ),
                         trailing: Chip(
                           label: Text(
-                            "4,500",
+                            "10",
                             style: TextStyle(color: Colors.white),
                           ),
                         ),

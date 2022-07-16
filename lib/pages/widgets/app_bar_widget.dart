@@ -2,7 +2,12 @@ import 'package:admin_panel_responsive_flutter/constants.dart';
 import 'package:admin_panel_responsive_flutter/responsive_layout.dart';
 import 'package:flutter/material.dart';
 
-List<String> _buttonNames = ["Overview", "Revenue", "Sales", "Control"];
+List<String> _buttonNames = [
+  "Overview",
+  "Terminés",
+  "En attente",
+  "Non suivis"
+];
 int _currentSelectedButton = 0;
 
 class AppBarWidget extends StatefulWidget {
@@ -50,7 +55,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
               onPressed: () {},
               child: Padding(
                 padding: const EdgeInsets.all(Constants.kPadding / 2),
-                child: Text("Admin Panel"),
+                child: Text("Formations"),
               ),
               style: OutlinedButton.styleFrom(
                   primary: Colors.white,

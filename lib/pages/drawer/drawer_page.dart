@@ -20,14 +20,12 @@ class Task {
 int _currentIndex = 0;
 
 List<ButtonsInfo> _buttonNames = [
-  ButtonsInfo(title: "Home", icon: Icons.home),
-  ButtonsInfo(title: "Setting", icon: Icons.settings),
-  ButtonsInfo(title: "Notifications", icon: Icons.notifications),
+  ButtonsInfo(title: "Dashboard", icon: Icons.home),
+  ButtonsInfo(title: "Ajouter cours", icon: Icons.library_books_outlined),
+  ButtonsInfo(
+      title: "Participants", icon: Icons.supervised_user_circle_rounded),
   ButtonsInfo(title: "Contacts", icon: Icons.contact_phone_rounded),
-  ButtonsInfo(title: "Sales", icon: Icons.sell),
-  ButtonsInfo(title: "Marketing", icon: Icons.mark_email_read),
-  ButtonsInfo(title: "Security", icon: Icons.verified_user),
-  ButtonsInfo(title: "Users", icon: Icons.supervised_user_circle_rounded),
+  ButtonsInfo(title: "Paramètres", icon: Icons.settings),
 ];
 
 class DrawerPage extends StatefulWidget {
@@ -71,8 +69,10 @@ class _DrawerPageState extends State<DrawerPage> {
                               borderRadius: BorderRadius.circular(20),
                               gradient: LinearGradient(
                                 colors: [
-                                  Constants.red.withOpacity(0.9),
-                                  Constants.orange.withOpacity(0.9),
+                                  Color.fromARGB(255, 184, 72, 64)
+                                      .withOpacity(0.9),
+                                  Color.fromARGB(255, 180, 110, 40)
+                                      .withOpacity(0.9),
                                 ],
                               ),
                             )
@@ -88,7 +88,7 @@ class _DrawerPageState extends State<DrawerPage> {
                           padding: const EdgeInsets.all(Constants.kPadding),
                           child: Icon(
                             _buttonNames[index].icon,
-                            color: Colors.white,
+                            color: Color.fromARGB(255, 19, 152, 185),
                           ),
                         ),
                         onTap: () {
